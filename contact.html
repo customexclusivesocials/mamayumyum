@@ -5,19 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact | Mama Yum Yum</title>
 <meta name="description" content="Contact Mama Yum Yum for custom baby food orders, subscriptions, or questions. Find us at the Niagara Falls Farmers Market.">
-<link rel="icon" href="assets/images/logo.jpg">
+<link rel="icon" href="assets/images/logo-mark.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="antialiased">
-<header class="sticky top-0 z-40 bg-[var(--cream)]/95 backdrop-blur border-b border-[rgba(89,86,139,0.15)]">
+<header class="sticky top-0 z-40 bg-[var(--cream)]/95 backdrop-blur border-b border-[rgba(30,42,68,0.15)]">
   <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
     <a href="index.html" class="flex items-center gap-3">
-      <img src="assets/images/logo.jpg" alt="Mama Yum Yum logo" class="w-11 h-11 rounded-full object-cover">
-      <span class="font-display text-xl sm:text-2xl text-[var(--purple)] leading-none">Mama Yum Yum</span>
+      <img src="assets/images/logo-mark.svg" alt="Mama Yum Yum logo" class="w-11 h-11 rounded-full">
+      <span class="leading-none">
+        <span class="block font-display font-semibold text-xl sm:text-2xl text-[var(--purple)] tracking-wide">Mama Yum Yum</span>
+        <span class="block font-script text-base text-[var(--yellow)] -mt-1">with Michelle</span>
+      </span>
     </a>
     <nav class="hidden lg:flex items-center gap-7 font-medium text-[15px]">
       <a href="index.html" class="nav-link">Home</a>
@@ -38,7 +41,7 @@
       </button>
     </div>
   </div>
-  <div id="mobileMenu" class="hidden lg:hidden border-t border-[rgba(89,86,139,0.15)] bg-[var(--cream)]">
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-[rgba(30,42,68,0.15)] bg-[var(--cream)]">
     <div class="px-5 py-4 flex flex-col gap-4 font-medium">
       <a href="index.html" class="nav-link">Home</a>
       <a href="about.html" class="nav-link">About Us</a>
@@ -65,7 +68,7 @@
       <input id="cf-email" type="email" required placeholder="Your email">
       <textarea id="cf-message" required rows="5" placeholder="How can we help?"></textarea>
       <button type="submit" class="btn-primary rounded-full px-7 py-3 font-semibold">Send Message</button>
-      <p class="text-xs text-[var(--charcoal)]/60">This opens your email app with your message pre-filled. A direct contact form is launching with our online store.</p>
+      <p class="text-xs text-[var(--charcoal)]/60">This opens your email app with your message pre-filled. For orders, visit our <a href="https://mamayumyumbabyfood.myshopify.com/" target="_blank" rel="noopener" class="underline">online store</a>.</p>
     </form>
     <div class="space-y-5 fade-in">
       <div class="kraft-box rounded-2xl p-6">
@@ -89,8 +92,11 @@
     <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
       <div>
         <div class="flex items-center gap-3 mb-4">
-          <img src="assets/images/logo.jpg" alt="Mama Yum Yum logo" class="w-10 h-10 rounded-full object-cover">
-          <span class="font-display text-xl">Mama Yum Yum</span>
+          <img src="assets/images/logo-mark.svg" alt="Mama Yum Yum logo" class="w-10 h-10 rounded-full">
+          <span class="leading-none">
+            <span class="block font-display font-semibold text-xl">Mama Yum Yum</span>
+            <span class="block font-script text-base text-[var(--yellow)] -mt-1">with Michelle</span>
+          </span>
         </div>
         <p class="text-[var(--cream)]/70 text-sm leading-relaxed">Tiny bites, big nutrition. Fresh frozen baby purees, homemade with love in Niagara Falls and shipped across the region.</p>
         <p class="mt-4"><a href="https://instagram.com/mamayumm_babyfood" class="text-sm underline hover:text-[var(--yellow)]">@mamayumm_babyfood</a></p>
@@ -130,7 +136,7 @@
     </div>
     <div class="mt-12 pt-6 border-t border-white/15 flex flex-col sm:flex-row gap-3 justify-between items-center text-xs text-[var(--cream)]/50">
       <p>&copy; <span id="year"></span> Mama Yum Yum &middot; Homemade Baby Food with Michelle</p>
-      <p>Online ordering launching soon &middot; call or email to order today</p>
+      <p>Shop online now at <a href="https://mamayumyumbabyfood.myshopify.com/" target="_blank" rel="noopener" class="underline hover:text-[var(--yellow)]">our Shopify store</a></p>
     </div>
   </div>
 </footer>
