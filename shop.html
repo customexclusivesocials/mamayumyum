@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop | Mama Yum Yum Puree Blends</title>
+<meta name="description" content="Browse Mama Yum Yum's fresh frozen baby puree blends, filterable by Fruity Sweets, Veggie Power, and Superfood Combos. Subscribe & save or bring back your jars for a discount.">
+<link rel="icon" href="assets/images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased">
+<header class="sticky top-0 z-40 bg-[var(--cream)]/95 backdrop-blur border-b border-[rgba(89,86,139,0.15)]">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+    <a href="index.html" class="flex items-center gap-3">
+      <img src="assets/images/logo.jpg" alt="Mama Yum Yum logo" class="w-11 h-11 rounded-full object-cover">
+      <span class="font-display text-xl sm:text-2xl text-[var(--purple)] leading-none">Mama Yum Yum</span>
+    </a>
+    <nav class="hidden lg:flex items-center gap-7 font-medium text-[15px]">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="shop.html" class="nav-link active">Shop</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      
+    </nav>
+    <div class="flex items-center gap-4">
+      <a href="https://mamayumyumbabyfood.myshopify.com/account" target="_blank" rel="noopener" aria-label="My account" class="hidden sm:inline-flex text-[var(--purple)]"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a>
+      <a href="https://mamayumyumbabyfood.myshopify.com/cart" target="_blank" rel="noopener" aria-label="Cart" class="relative inline-flex text-[var(--purple)]"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></a>
+      <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-secondary hidden sm:inline-flex items-center rounded-full px-5 py-2.5 text-sm font-semibold">Shop Now</a>
+      <button id="mobileMenuBtn" class="lg:hidden text-[var(--purple)]" aria-label="Open menu" aria-expanded="false">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-[rgba(89,86,139,0.15)] bg-[var(--cream)]">
+    <div class="px-5 py-4 flex flex-col gap-4 font-medium">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About Us</a>
+      <a href="shop.html" class="nav-link active">Shop</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="reviews.html" class="nav-link">Reviews</a>
+      <a href="faq.html" class="nav-link">FAQ</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+      
+      <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-secondary rounded-full px-5 py-2.5 text-sm font-semibold text-center">Shop Now</a>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-20">
+  <div class="max-w-2xl mb-10 fade-in">
+    <p class="badge-pill inline-block rounded-full px-4 py-1 text-xs font-semibold tracking-wide mb-4">The Jars</p>
+    <h1 class="font-display text-3xl sm:text-4xl text-[var(--purple-dark)] mb-4">Shop Our Puree Blends</h1>
+    <p class="text-[var(--charcoal)]/80 leading-relaxed">Every blend is cooked in small batches and flash-frozen at peak freshness, for babies 4 months through their first birthday. Browse the blends below, then shop and check out securely through our online store.</p>
+  </div>
+
+  <div class="kraft-box rounded-2xl p-6 sm:p-7 mb-10 flex flex-col sm:flex-row items-start sm:items-center gap-5 fade-in">
+    <div class="seal w-16 h-16 shrink-0 hidden sm:flex"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div>
+    <div class="flex-1">
+      <p class="font-display text-lg text-[var(--purple-dark)]">Our online store is open!</p>
+      <p class="text-[var(--charcoal)]/80 mt-1">Shop, subscribe, and check out securely &mdash; all orders are placed through our store.</p>
+    </div>
+    <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-secondary rounded-full px-6 py-3 font-semibold whitespace-nowrap">Visit Our Store &rarr;</a>
+  </div>
+
+  <div class="flex flex-wrap gap-3 mb-10 fade-in">
+    <button class="filter-btn active rounded-full px-5 py-2 text-sm font-semibold" data-filter="all">All</button>
+    <button class="filter-btn rounded-full px-5 py-2 text-sm font-semibold" data-filter="fruity">Fruity Sweets</button>
+    <button class="filter-btn rounded-full px-5 py-2 text-sm font-semibold" data-filter="veggie">Veggie Power</button>
+    <button class="filter-btn rounded-full px-5 py-2 text-sm font-semibold" data-filter="superfood">Superfood Combos</button>
+  </div>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="fruity">
+        <div class="swatch-icon w-16 h-16 mb-4 flex items-center justify-center" style="background:var(--peach);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="1.6"><circle cx="12" cy="14" r="7"/><path d="M12 7c0-2 1.5-3 3-4" stroke-linecap="round"/></svg></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Strawberry, Avocado &amp; Mango</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">Dessert-for-breakfast blend &mdash; eleven strawberries, one avocado, one mango.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="veggie">
+        <div class="swatch-icon w-16 h-16 mb-4 flex items-center justify-center" style="background:var(--sage-light);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.6"><path d="M12 21V9" stroke-linecap="round"/><path d="M12 12c-4-1-6-4-6-8 4 0 7 2 6 8z"/><path d="M12 9c4-1 6-4 6-7-4 0-6 2-6 7z"/></svg></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Bartlett Pear &amp; Broccoli</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">A smooth, mild green dream packed with plant protein and vitamin C.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="veggie">
+        <div class="swatch-icon w-16 h-16 mb-4 flex items-center justify-center" style="background:var(--yellow);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="1.6"><path d="M12 3c2 3 2 6 0 9-2-3-2-6 0-9z"/><path d="M12 12v9" stroke-linecap="round"/><path d="M12 15c-2-1-3-1-5 0M12 15c2-1 3-1 5 0" stroke-linecap="round"/></svg></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Pear, Carrot &amp; Orange Juice</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">A golden blend, rich in beta-carotene, with freshly squeezed OJ.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="superfood">
+        <div class="swatch-icon w-16 h-16 mb-4 flex items-center justify-center" style="background:var(--peach);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="1.6"><ellipse cx="12" cy="12" rx="8" ry="6"/><path d="M4 12h16" stroke-linecap="round"/></svg></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Asparagus, Beet &amp; Banana</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">A sensory delight rich in iron, folate, and vitamin K.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="superfood">
+        <div class="swatch-photo w-16 h-16 mb-4 overflow-hidden"><img src="assets/images/asparagus-pear-mango.jpg" alt="Asparagus, Bosc Pear &amp; Mango puree jar" class="w-full h-full object-cover"></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Asparagus, Bosc Pear &amp; Mango</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">Bone-building vitamin K and fiber in every spoonful.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="superfood">
+        <div class="swatch-photo w-16 h-16 mb-4 overflow-hidden"><img src="assets/images/asparagus-apple-edamame.jpg" alt="Asparagus, Golden Apple &amp; Edamame puree jar" class="w-full h-full object-cover"></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Asparagus, Golden Apple &amp; Edamame</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">A silky plant-protein boost, naturally sweetened.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="fruity">
+        <div class="swatch-icon w-16 h-16 mb-4 flex items-center justify-center" style="background:var(--sage-light);"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.6"><circle cx="12" cy="12" r="7"/><path d="M12 8v8M8 12h8" stroke-linecap="round"/></svg></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Beetroot &amp; Papaya</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">Papaya naturally tenderizes and sweetens the beetroot flavor.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+    <div class="site-card rounded-2xl p-6 fade-in flex flex-col" data-cat="veggie">
+        <div class="swatch-photo w-16 h-16 mb-4 overflow-hidden"><img src="assets/images/sweetpotato-apple.jpg" alt="Sweet Potato &amp; Golden Apple puree jar" class="w-full h-full object-cover"></div>
+        <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Sweet Potato &amp; Golden Apple</h3>
+        <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed flex-1">A comforting, cozy staple blend for everyday bowls.</p>
+        <a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="btn-primary mt-4 rounded-full px-5 py-2 text-sm font-semibold text-center">Shop This Blend</a>
+      </div>
+  </div>
+
+  <div class="mt-10 kraft-box rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center gap-5 fade-in">
+    <div class="seal w-16 h-16 shrink-0 hidden sm:flex"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+    <div>
+      <p class="font-display text-lg text-[var(--purple-dark)]">Want a custom combination?</p>
+      <p class="text-[var(--charcoal)]/80 mt-1">The blends are endless. Call <a href="tel:2893220063" class="text-[var(--purple)] font-semibold underline">289-322-0063</a> to request a custom recipe tailored to your baby's dietary needs.</p>
+    </div>
+  </div>
+
+  <div class="mt-6 grid sm:grid-cols-2 gap-6 fade-in">
+    <div class="site-card rounded-2xl p-6 sm:p-7">
+      <div class="swatch-icon w-14 h-14 mb-4 flex items-center justify-center" style="background:var(--sage-light);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--sage)" stroke-width="1.8"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/></svg></div>
+      <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Subscribe &amp; Save</h3>
+      <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed">Set up a subscription and never run low &mdash; fresh jars arrive on your schedule.</p>
+    </div>
+    <div class="site-card rounded-2xl p-6 sm:p-7">
+      <div class="swatch-icon w-14 h-14 mb-4 flex items-center justify-center" style="background:var(--peach);"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--purple-dark)" stroke-width="1.8"><path d="M3 7h18M8 7V4a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v3M6 7l1 13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-13"/></svg></div>
+      <h3 class="font-display text-lg text-[var(--purple-dark)] mb-1">Bring Back Your Jars</h3>
+      <p class="text-sm text-[var(--charcoal)]/75 leading-relaxed">Return your empty jars and get a percentage off your next order.</p>
+    </div>
+  </div>
+
+  <div class="mt-10 flex items-center gap-3 text-sm text-[var(--charcoal)]/70 fade-in">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--purple)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+    <p>Look for gift card and discount code options at checkout on our online store.</p>
+  </div>
+</section>
+<footer class="bg-[var(--purple-dark)] text-[var(--cream)]">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="assets/images/logo.jpg" alt="Mama Yum Yum logo" class="w-10 h-10 rounded-full object-cover">
+          <span class="font-display text-xl">Mama Yum Yum</span>
+        </div>
+        <p class="text-[var(--cream)]/70 text-sm leading-relaxed">Tiny bites, big nutrition. Fresh frozen baby purees, homemade with love in Niagara Falls and shipped across the region.</p>
+        <p class="mt-4"><a href="https://instagram.com/mamayumm_babyfood" class="text-sm underline hover:text-[var(--yellow)]">@mamayumm_babyfood</a></p>
+      </div>
+      <div>
+        <h3 class="font-display text-lg mb-4 text-[var(--yellow)]">Shop</h3>
+        <ul class="space-y-2 text-sm text-[var(--cream)]/85">
+          <li><a href="https://mamayumyumbabyfood.myshopify.com/collections/all" target="_blank" rel="noopener" class="hover:text-[var(--yellow)]">Visit Our Online Store</a></li>
+          <li><a href="shop.html" class="hover:text-[var(--yellow)]">All Blends</a></li>
+          <li><a href="gallery.html" class="hover:text-[var(--yellow)]">Gallery</a></li>
+          <li><a href="reviews.html" class="hover:text-[var(--yellow)]">Reviews</a></li>
+          <li><a href="shipping-information.html" class="hover:text-[var(--yellow)]">Shipping Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display text-lg mb-4 text-[var(--yellow)]">Company</h3>
+        <ul class="space-y-2 text-sm text-[var(--cream)]/85">
+          <li><a href="about.html" class="hover:text-[var(--yellow)]">About Us</a></li>
+          <li><a href="faq.html" class="hover:text-[var(--yellow)]">FAQ</a></li>
+          <li><a href="contact.html" class="hover:text-[var(--yellow)]">Contact</a></li>
+          <li><a href="privacy-policy.html" class="hover:text-[var(--yellow)]">Privacy Policy</a></li>
+          <li><a href="terms-and-conditions.html" class="hover:text-[var(--yellow)]">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display text-lg mb-4 text-[var(--yellow)]">Stay in the Loop</h3>
+        <p class="text-sm text-[var(--cream)]/80 mb-3">New blends, market dates, and subscriber-only offers.</p>
+        <form id="newsletterForm" class="flex flex-col gap-2">
+          <input type="email" required placeholder="you@email.com" class="!bg-white/10 !border-white/20 !text-[var(--cream)] placeholder:text-[var(--cream)]/50 text-sm">
+          <button type="submit" class="btn-secondary rounded-full px-5 py-2.5 text-sm font-semibold">Subscribe</button>
+        </form>
+        <ul class="mt-5 space-y-1 text-sm text-[var(--cream)]/85">
+          <li><a href="tel:2893220063" class="hover:text-[var(--yellow)]">289-322-0063</a></li>
+          <li><a href="mailto:mamayumm@hotmail.com" class="hover:text-[var(--yellow)]">mamayumm@hotmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 pt-6 border-t border-white/15 flex flex-col sm:flex-row gap-3 justify-between items-center text-xs text-[var(--cream)]/50">
+      <p>&copy; <span id="year"></span> Mama Yum Yum &middot; Homemade Baby Food with Michelle</p>
+      <p>Online ordering launching soon &middot; call or email to order today</p>
+    </div>
+  </div>
+</footer>
+<div id="order-modal" class="modal-backdrop fixed inset-0 z-50 items-center justify-center bg-[var(--charcoal)]/60 px-5" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="bg-[var(--cream)] rounded-2xl max-w-sm w-full p-7 relative shadow-2xl">
+    <button onclick="closeOrderModal()" aria-label="Close" class="absolute top-4 right-4 text-[var(--purple)]">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <p class="seal w-14 h-14 mb-4"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></p>
+    <h3 id="modalTitle" class="font-display text-2xl text-[var(--purple-dark)] mb-2">Let's Talk Custom Blends</h3>
+    <p class="text-[var(--charcoal)]/80 mb-6">Give Michelle a call or send an email with your baby's age, favourite flavours, and any allergies &mdash; she'll help you build the perfect jar.</p>
+    <div class="space-y-3">
+      <a href="tel:2893220063" class="btn-primary flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold">Call 289-322-0063</a>
+      <a href="mailto:mamayumm@hotmail.com" class="btn-outline flex items-center justify-center gap-2 rounded-full px-6 py-3 font-semibold">Email mamayumm@hotmail.com</a>
+    </div>
+  </div>
+</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
